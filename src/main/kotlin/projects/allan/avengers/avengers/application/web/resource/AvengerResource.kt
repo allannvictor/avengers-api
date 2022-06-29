@@ -45,7 +45,7 @@ class AvengerResource(
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    fun createAvenger(@Valid @RequestBody avengerRequest: AvengerRequest){
+    fun createAvenger(@Valid @RequestBody avengerRequest: AvengerRequest) : ResponseEntity<AvengerResponse>{
         //avengerRepository.create(avengerRequest.toAvenger())
         return avengerRequest.toAvenger().run {
             avengerRepository.create(this)
