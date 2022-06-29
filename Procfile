@@ -1,1 +1,1 @@
-web: java -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap $JAVA_OPTS -Dserver.port=$PORT -Dspring.profiles.active=heroku -jar build/libs/*.jar
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/avengers-api-0.0.1-SNAPSHOT.jar
