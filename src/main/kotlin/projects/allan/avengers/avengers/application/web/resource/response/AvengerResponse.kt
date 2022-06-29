@@ -14,8 +14,8 @@ data class AvengerResponse(
             id = avenger.id!!,
             nick = avenger.nick,
             person = avenger.person,
-            description = avenger?.description,
-            history = avenger?.history
+            description = avenger.description,
+            history = avenger.history
         )
     }
 }
